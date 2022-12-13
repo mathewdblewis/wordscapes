@@ -5,6 +5,14 @@ Word: <input id="input">
 <p id="output"></p>
 
 <script>
+  function subword(w1,w2){
+    d1={};w.split('').forEach(e=>d1[e]=e in d1?d1[e]+1:1)
+    d2={};w.split('').forEach(e=>d2[e]=e in d2?d2[e]+1:1)
+    for (var k in d1) if (!(k in d2) or d2[k]<d1[k]) return false
+    return true
+  }
+  
+  
   function isSubword(word1,word2){
     let letters1 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     let L1 = word1.split("")
