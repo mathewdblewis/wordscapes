@@ -1,5 +1,4 @@
 <h1>Wordscapes Solver!</h1>
-
 Word: <input id="input">
 <button onclick="findAllSubwords()">find all sub-words</button>
 <p id="output"></p>
@@ -19,7 +18,6 @@ Word: <input id="input">
     for (let x=0; x<ar.length; x++){
       if (subword(ar[x],word) && ar[x].length>2) ans += ar[x]+"<br>"
     }
-    
     document.getElementById("output").innerHTML = ans
   }
 </script>
