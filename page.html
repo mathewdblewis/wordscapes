@@ -10,8 +10,8 @@ Word: <input id="input">
     for (var k in d1) {if (!(k in d2) || d2[k]<d1[k]) return false}
     return true
   }
-	async function findAllSubwords(){
-		let A = await(await fetch('https://raw.githubusercontent.com/mathewdblewis/wordscapes/main/data3.txt')).text()
-		document.getElementById('output').innerHTML = A.split(',').filter(a=>subword(a,document.getElementById('input').value)).join('<br>')
-	}
+  async function findAllSubwords(){
+    let A = await(await fetch('https://raw.githubusercontent.com/mathewdblewis/wordscapes/main/data4.txt')).text()
+    document.getElementById('output').innerHTML = A.split(',').filter(a=>subword(a,document.getElementById('input').value)).join('<br>')
+  }
 </script>
