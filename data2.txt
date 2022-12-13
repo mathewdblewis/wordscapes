@@ -1,0 +1,1 @@
+['the', 'of', 'and', 'to', 'a', 'in', 'that', 'was', 'he', 'his']
