@@ -5,8 +5,8 @@ Word: <input id="input">
 
 <script>
   function subword(w1,w2){
-    d1={};w.split('').forEach(e=>d1[e]=e in d1?d1[e]+1:1)
-    d2={};w.split('').forEach(e=>d2[e]=e in d2?d2[e]+1:1)
+    d1={};w1.split('').forEach(e=>d1[e]=e in d1?d1[e]+1:1)
+    d2={};w2.split('').forEach(e=>d2[e]=e in d2?d2[e]+1:1)
     for (var k in d1){
       if (!(k in d2) || d2[k]<d1[k]) return false
     }
