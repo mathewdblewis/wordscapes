@@ -12,24 +12,6 @@ Word: <input id="input">
     return true
   }
   
-  
-  function isSubword(word1,word2){
-    let letters1 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    let L1 = word1.split("")
-    for (let x=0; x<L1.length; x++){
-      letters1[L1[x].charCodeAt(0)-97]++
-    }
-    let letters2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    let L2 = word2.split("")
-    for (let x=0; x<L2.length; x++){
-      letters2[L2[x].charCodeAt(0)-97]++
-    }
-    for (let x=0; x<26; x++){
-      if (letters2[x]<letters1[x]) return false
-    }
-    return true
-  }
-
   function findAllSubwords() {
     word = document.getElementById('input').value
     ans = ''
@@ -40,8 +22,4 @@ Word: <input id="input">
     
     document.getElementById("output").innerHTML = ans
   }
-
-
-
 </script>
-
